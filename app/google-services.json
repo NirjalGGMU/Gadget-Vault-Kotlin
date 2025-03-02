@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "359217492671",
+    "firebase_url": "https://gadget-vault-default-rtdb.firebaseio.com",
+    "project_id": "gadget-vault",
+    "storage_bucket": "gadget-vault.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359217492671:android:019e5dd0f5cc0445788c0a",
+        "android_client_info": {
+          "package_name": "com.example.gadgetvault"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd9qD0K0yU_sRHNyvvYvXWrMw7D3LR7OA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
