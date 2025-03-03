@@ -3,7 +3,6 @@ package com.example.gadgetvault.adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.example.gadgetvault.databinding.ItemProductBinding
 import com.example.gadgetvault.models.Product
 
@@ -33,7 +32,7 @@ class ProductAdapter(private val onClick: (Product) -> Unit) :
         fun bind(product: Product) {
             binding.tvProductName.text = product.name
             binding.tvProductPrice.text = "$${product.price}"
-            Glide.with(binding.root.context).load(product.imageUrl).into(binding.ivProductImage)
+            // Removed Glide image loading since no images are requested
             binding.root.setOnClickListener { onClick(product) }
         }
     }

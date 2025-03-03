@@ -30,11 +30,11 @@ object FirebaseUtil {
             snapshot.children.mapNotNull { it.getValue(Product::class.java) }
         } catch (e: Exception) {
             Log.e("FirebaseUtil", "Error fetching products: ${e.message}")
-            // Fallback: Return hardcoded products for testing if Firebase fails
+            // Fallback: Return hardcoded products without images for testing if Firebase fails
             listOf(
-                Product("1", "Laptop", "High-performance laptop", 999.99, "https://picsum.photos/200", 4.5, 10),
-                Product("2", "Headphones", "Noise-canceling headphones", 49.99, "https://picsum.photos/200", 4.2, 20),
-                Product("3", "PS5", "Next-gen gaming console", 499.99, "https://picsum.photos/200", 4.8, 5)
+                Product("1", "Laptop", "High-performance laptop", 999.99, "", 4.5, 10),
+                Product("2", "PS5", "Next-gen gaming console", 499.99, "", 4.8, 5),
+                Product("3", "Headphones", "Noise-canceling headphones", 49.99, "", 4.2, 20)
             )
         }
     }
